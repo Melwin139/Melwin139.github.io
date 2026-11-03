@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Melwin Edwin Naigam | Web Developer, Pune</title>
+<meta name="description" content="Fast, mobile-friendly websites for coaching classes, clinics and small businesses. React, Next.js and WordPress developer in Pune.">
+<meta property="og:title" content="Melwin Edwin Naigam | Web Developer">
+<meta property="og:description" content="Fast, mobile-friendly business websites that turn visitors into enquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F1A;--bg2:#111827;--card:rgba(255,255,255,.04);--line:rgba(255,255,255,.09);--text:#E8ECF4;--muted:#9AA4B8;--a1:#7C5CFF;--a2:#22D3EE;--a3:#A3E635;--wa:#25D366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.glow{position:fixed;inset:-20% -10% auto auto;width:60vw;height:60vw;background:radial-gradient(circle,rgba(124,92,255,.25),transparent 60%);filter:blur(40px);z-index:-1;pointer-events:none}
+.glow.b{inset:auto auto -20% -10%;background:radial-gradient(circle,rgba(34,211,238,.18),transparent 60%)}
+nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(11,15,26,.7);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:800;font-size:1.2rem;letter-spacing:-.02em}
+.logo span{background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.links{display:flex;gap:28px;font-size:.95rem;color:var(--muted)}
+.links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-p{background:linear-gradient(135deg,var(--a1),var(--a2));color:#fff;box-shadow:0 10px 30px -10px rgba(124,92,255,.7)}
+.btn-wa{background:var(--wa);color:#06260f}
+.btn-g{border:1px solid var(--line);background:var(--card)}
+.hero{padding:96px 0 72px;text-align:center}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:.85rem;color:var(--muted);margin-bottom:24px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--a3);box-shadow:0 0 12px var(--a3)}
+h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.08;font-weight:800;letter-spacing:-.035em;max-width:860px;margin:0 auto}
+.grad{background:linear-gradient(90deg,var(--a1),var(--a2),var(--a3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:620px;margin:22px auto 34px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:64px}
+.stat{padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+.stat b{display:block;font-size:1.6rem;font-weight:800}
+.stat span{color:var(--muted);font-size:.88rem}
+section{padding:80px 0}
+.eyebrow{color:var(--a2);font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;letter-spacing:-.03em;margin:8px 0 14px}
+.sub{color:var(--muted);max-width:600px;margin-bottom:40px}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--card);transition:border-color .25s,transform .25s}
+.card:hover{border-color:rgba(124,92,255,.5);transform:translateY(-4px)}
+.card.wide{grid-column:span 2}
+.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:1.3rem;margin-bottom:18px;background:linear-gradient(135deg,rgba(124,92,255,.25),rgba(34,211,238,.18));border:1px solid var(--line)}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.proj{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--bg2);display:flex;flex-direction:column}
+.thumb{height:170px;display:grid;place-items:center;font-size:2.6rem;font-weight:800;letter-spacing:-.03em}
+.t1{background:linear-gradient(135deg,#7C5CFF,#22D3EE)}
+.t2{background:linear-gradient(135deg,#0EA5E9,#A3E635)}
+.t3{background:linear-gradient(135deg,#F472B6,#7C5CFF)}
+.proj .body{padding:22px;flex:1;display:flex;flex-direction:column}
+.proj h3{font-size:1.1rem;margin-bottom:6px}
+.proj p{color:var(--muted);font-size:.92rem;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.tag{font-size:.75rem;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.06);color:var(--muted)}
+.more{color:var(--a2);font-weight:600;font-size:.9rem}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{padding:26px;border-radius:20px;border:1px solid var(--line);background:var(--card);position:relative}
+.step:before{counter-increment:s;content:"0" counter(s);font-weight:800;font-size:2rem;background:linear-gradient(90deg,var(--a1),var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.92rem}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-weight:500;font-size:.92rem}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.avatar{aspect-ratio:1;border-radius:28px;background:linear-gradient(135deg,#0F2044,#0D9488);display:grid;place-items:center;font-size:6rem;font-weight:800;border:1px solid var(--line);box-shadow:0 30px 80px -30px rgba(34,211,238,.4)}
+.about p{color:var(--muted);margin-bottom:14px}
+.contact{text-align:center;padding:64px 28px;border-radius:32px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(124,92,255,.18),rgba(34,211,238,.1))}
+.contact p{color:var(--muted);max-width:520px;margin:0 auto 30px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer .soc{display:flex;gap:20px}
+footer a:hover{color:var(--text)}
+.fab{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 30px -6px rgba(37,211,102,.6);z-index:60;transition:transform .2s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px;fill:#fff}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){.bento,.work{grid-template-columns:1fr 1fr}.card.wide{grid-column:span 2}.steps{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.avatar{max-width:280px}}
+@media(max-width:640px){.links{display:none}.bento,.work,.steps{grid-template-columns:1fr}.card.wide{grid-column:auto}.stats{grid-template-columns:1fr 1fr}.hero{padding:64px 0 48px}section{padding:60px 0}}
+</style>
+</head>
+<body>
+<div class="glow"></div><div class="glow b"></div>
+
+<nav><div class="wrap">
+  <a href="#" class="logo">Melwin<span>.dev</span></a>
+  <div class="links"><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a></div>
+  <a class="btn btn-p" href="#contact">Get a quote</a>
+</div></nav>
+
+<header class="hero wrap">
+  <div class="pill"><span class="dot"></span> Available for new projects · Pune, India</div>
+  <h1>Websites that turn visitors into <span class="grad">calls &amp; WhatsApp enquiries</span></h1>
+  <p>I'm Melwin, a web developer building fast, mobile-friendly websites for coaching classes, clinics, salons, restaurants and growing businesses.</p>
+  <div class="cta">
+    <a class="btn btn-wa" href="https://wa.me/919373754956?text=Hi%20Melwin%2C%20I%20need%20a%20website%20for%20my%20business" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    <a class="btn btn-g" href="#work">See my work →</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>&lt; 2s</b><span>Target load time</span></div>
+    <div class="stat"><b>100%</b><span>Mobile-friendly</span></div>
+    <div class="stat"><b>2</b><span>Revision rounds included</span></div>
+    <div class="stat"><b>Fixed</b><span>Price agreed upfront</span></div>
+  </div>
+</header>
+
+<section id="services"><div class="wrap">
+  <div class="eyebrow">Services</div>
+  <h2>Everything your business needs online</h2>
+  <p class="sub">From a simple one-page site to a custom web app, built to look great on every phone and bring you real enquiries.</p>
+  <div class="bento">
+    <div class="card wide reveal"><div class="ic">🏢</div><h3>Business websites</h3><p>3–10 page websites for coaching classes, clinics, salons and local shops, with enquiry forms, Google Maps and click-to-call built in.</p></div>
+    <div class="card reveal"><div class="ic">🚀</div><h3>Landing pages</h3><p>High-converting pages for courses, offers and launches.</p></div>
+    <div class="card reveal"><div class="ic">🧩</div><h3>WordPress sites</h3><p>Sites you can update yourself, no coding needed.</p></div>
+    <div class="card reveal"><div class="ic">⚛️</div><h3>React &amp; Next.js apps</h3><p>Custom, lightning-fast sites and web apps.</p></div>
+    <div class="card reveal"><div class="ic">📈</div><h3>SEO &amp; Google Business</h3><p>Basic SEO and Google Business Profile setup so local customers find you.</p></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="eyebrow">Recent work</div>
+  <h2>Projects I've built</h2>
+  <p class="sub">A few things I've designed and developed. More client demos coming soon.</p>
+  <div class="work">
+    <a class="proj reveal" href="https://github.com/Melwin139/QuickBooking-FullStack" target="_blank" rel="noopener">
+      <div class="thumb t1">QuickBooking</div>
+      <div class="body"><h3>QuickBooking – Full-stack booking app</h3><p>A full-stack web application for online bookings, with a responsive front end and a server-side API.</p>
+      <div class="tags"><span class="tag">Full Stack</span><span class="tag">Web App</span></div><span class="more">View code →</span></div>
+    </a>
+    <div class="proj reveal">
+      <div class="thumb t2">Bio-Shield</div>
+      <div class="body"><h3>Bio-Shield Surge</h3><p>An AI-powered asset command center built for Hadron Ignite, a ServiceNow hackathon.</p>
+      <div class="tags"><span class="tag">ServiceNow</span><span class="tag">AI</span><span class="tag">Dashboard</span></div><span class="more">Hackathon project</span></div>
+    </div>
+    <a class="proj reveal" href="https://github.com/Melwin139/A-dummy-mysql-db-in-grafana-to-visualise-mysql-.-all-steps-to-setup-a-mysql-server-in-ubuntu" target="_blank" rel="noopener">
+      <div class="thumb t3">Grafana</div>
+      <div class="body"><h3>MySQL dashboards in Grafana</h3><p>Step-by-step setup of a MySQL server on Ubuntu, visualised with live Grafana dashboards.</p>
+      <div class="tags"><span class="tag">MySQL</span><span class="tag">Grafana</span><span class="tag">Linux</span></div><span class="more">View code →</span></div>
+    </a>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="eyebrow">How I work</div>
+  <h2>Simple, clear, fast</h2>
+  <p class="sub">No confusing jargon. You always know what's happening and what it costs.</p>
+  <div class="steps">
+    <div class="step reveal"><h3>Discuss</h3><p>A quick call or WhatsApp chat about your business and goals.</p></div>
+    <div class="step reveal"><h3>Quote</h3><p>A clear fixed price and timeline before any work starts.</p></div>
+    <div class="step reveal"><h3>Build</h3><p>First draft within days, with 2 rounds of revisions included.</p></div>
+    <div class="step reveal"><h3>Launch</h3><p>Go live, plus optional care plans for updates and hosting.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">Tech stack</div>
+  <h2>Tools I use</h2>
+  <div class="skills" style="margin-top:28px">
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Next.js</span><span>WordPress</span><span>Responsive Design</span><span>SEO</span><span>Figma</span><span>Git &amp; GitHub</span><span>Netlify</span><span>Vercel</span><span>ServiceNow</span>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+  <div class="reveal">
+    <div class="eyebrow">About me</div>
+    <h2>Hi, I'm Melwin 👋</h2>
+    <p>I'm a web developer from Pune with an MCA in Cloud Technology and a BCA. I also work as a ServiceNow developer, so I'm used to building reliable, well-structured systems for real businesses.</p>
+    <p>I enjoy helping small businesses look professional online. Tell me about your business, and I'll suggest the simplest website that gets you results.</p>
+    <div class="cta" style="justify-content:flex-start;margin-top:22px">
+      <a class="btn btn-g" href="https://www.linkedin.com/in/melwinaigam" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-g" href="https://github.com/Melwin139" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <div class="avatar reveal"><span class="grad" style="background:linear-gradient(90deg,#fff,#A5F3FC);-webkit-background-clip:text;background-clip:text">MN</span></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact reveal">
+    <div class="eyebrow">Let's work together</div>
+    <h2>Ready to get more enquiries?</h2>
+    <p>Send me a message on WhatsApp or email. I usually reply within a few hours.</p>
+    <div class="cta">
+      <a class="btn btn-wa" href="https://wa.me/919373754956?text=Hi%20Melwin%2C%20I%20need%20a%20website%20for%20my%20business" target="_blank" rel="noopener">WhatsApp: +91 93737 54956</a>
+      <a class="btn btn-g" href="mailto:melwinaigam@gmail.com?subject=Website%20enquiry">melwinaigam@gmail.com</a>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© <span id="y"></span> Melwin Edwin Naigam · Web Developer, Pune</span>
+  <div class="soc"><a href="https://www.linkedin.com/in/melwinaigam" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Melwin139" target="_blank" rel="noopener">GitHub</a><a href="https://wa.me/919373754956" target="_blank" rel="noopener">WhatsApp</a></div>
+</div></footer>
+
+<a class="fab" href="https://wa.me/919373754956?text=Hi%20Melwin%2C%20I%20need%20a%20website%20for%20my%20business" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zM20.5 3.5C18.2 1.2 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.4z"/></svg></a>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
